@@ -4,7 +4,6 @@
   --gray: #2b2c28;
   --main: #1f9d8a;
   --light: #d5f6f1;
-  --clash: #d12ee0;
 }
 
 body {
@@ -116,4 +115,3 @@ button, a, select {
 .c-gray { color: var(--gray); }
 .c-main { color: var(--main); }
 .c-light { color: var(--light); }
-.c-clash { color: var(--clash); }

@@ -9,5 +9,7 @@
     "What is your Quest?",
     "What is the air speed velocity of an unladen swallow?"
   ],
-  "responses": []
+  "responses": [],
+  "colorMain": "#1f9d8a",
+  "colorLight": "#d5f6f1"
 }

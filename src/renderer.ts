@@ -13,11 +13,14 @@ interface Presentation {
   introSlides: string[];
   questions: string[];
   responses: Response[][];
+  colorMain?: string;
+  colorLight?: string;
 }
 
 let currentPresentation: Presentation | null = null;
 let currentPosition = 0;
 
+const root = document.documentElement;
 const main = document.getElementById('main');
 const promptSection = document.getElementById('prompt-sect');
 const titleSection = document.getElementById('title-sect');
@@ -42,6 +45,8 @@ main.ondrop = (event: DragEvent) => {
       if (currentPresentation === null) {
         console.log('set presentation')
         currentPresentation = JSON.parse(text)
+        if (currentPresentation.colorMain) root.style.setProperty('--main', currentPresentation.colorMain);
+        if (currentPresentation.colorLight) root.style.setProperty('--light', currentPresentation.colorLight);
         currentPosition = 0;
         showTitleScreen();
       } else if (currentPosition > 0 + currentPresentation.introSlides.length) {
