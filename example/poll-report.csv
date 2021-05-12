@@ -1,0 +1,15 @@
+﻿Poll Report,,,,,
+Report Generated:,1/1/2021 10:10,,,,
+Topic,Meeting ID,Actual Start Time,Actual Duration (minutes),,
+Bob's Personal Meeting Room,123 456 7890,1/1/2021 10:10,0,
+Poll Details,,,,,
+#,User Name,User Email,Submitted Date/Time,,
+1,John Smith,,1/1/2021 10:10,example question?,Strongly Agree
+2,Jane Doe,,1/1/2021 10:10,example question?,Neutral
+3,Foo Bar,,1/1/2021 10:10,example question?,Disagree
+4,John Doe,,1/1/2021 10:10,example question?,Disagree
+5,Jane Bar,,1/1/2021 10:10,example question?,Strongly Disagree
+6,Foo Smith,,1/1/2021 10:10,example question?,Neutral
+7,John Bar,,1/1/2021 10:10,example question?,Strongly Disagree
+8,Jane Smith,,1/1/2021 10:10,example question?,Strongly Disagree
+9,Foo Doe,,1/1/2021 10:10,example question?,Strongly Disagree
