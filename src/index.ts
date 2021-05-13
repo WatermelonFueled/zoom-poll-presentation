@@ -11,8 +11,8 @@ const isMac = process.platform === 'darwin'
 
 const createWindow = (): void => {
   const mainWindow = new BrowserWindow({
-    height: 1080,
-    width: 1920,
+    height: 720,
+    width: 1280,
     frame: false,
     webPreferences: {
       nodeIntegration: true,

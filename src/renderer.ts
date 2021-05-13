@@ -178,7 +178,7 @@ const clearResponses = () => {
 
 const pushResponse = (response: Response) => {
   const responseEle = document.createElement('div')
-  responseEle.className = 'fs-3'
+  responseEle.className = 'fs-2'
   responseEle.textContent = response.name
   switch (response.answer.toLowerCase().trim()) {
     case 'strongly disagree':
