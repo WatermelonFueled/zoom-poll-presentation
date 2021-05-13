@@ -180,7 +180,7 @@ const pushResponse = (response: Response) => {
   const responseEle = document.createElement('div')
   responseEle.className = 'fs-3'
   responseEle.textContent = response.name
-  switch (response.answer.split(';')[0].toLowerCase().trim()) {
+  switch (response.answer.toLowerCase().trim()) {
     case 'strongly disagree':
       stronglyDisagreeEle.appendChild(responseEle)
       break;
