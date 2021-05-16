@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Zoom Poll Presentation</title>
-
   </head>
   <body class="d-flex col c-black">
     <header id="drag-window"></header>
@@ -12,16 +11,19 @@
         Drag and drop presentation file here.
       </section>
       <section id="title-sect" class="d-none">
-        <header class="d-flex col gap-1-5 pl-3">
-          <h1 id="title" class="m-0 fs-5 c-main"></h1>
-          <h2 id="subtitle" class="m-0 fs-3 c-gray"></h2>
-        </header>
+        <div class="d-flex row aic">
+          <div id="title-img-div"></div>
+          <header class="d-flex col gap-1-5 pl-3">
+            <h1 id="title" class="m-0 fs-5 c-main"></h1>
+            <h2 id="subtitle" class="m-0 fs-3 c-gray"></h2>
+          </header>
+        </div>
       </section>
       <section id="intro-sect" class="d-none">
       </section>
       <section id="question-sect" class="d-none">
         <header>
-          <h1 id="question" class="m-0 fs-3 c-main">How about them apples?</h1>
+          <h1 id="question" class="m-0 fs-3 c-main"></h1>
         </header>
         <div class="d-flex row flex-nowrap fs-1-5 tac c-gray">
           <h3 class="flex-b-100">Strongly Disagree</h3>
@@ -63,6 +65,16 @@
           </div>
         </div>
       </section>
+      <div id="blank-screen" class="d-none"></div>
+      <div id="question-big-div" class="offscreen">
+        <div class="d-flex row flex-nowrap gap-1 aic p-1">
+          <div id="question-big-icon"></div>
+          <p class="fs-1-5 flex-b-100 m-0 c-gray">QUESTION</p>
+          <div id="question-x"></div>
+        </div>
+        <div id="question-big" class="fs-4 p-2"></div>
+      </div>
+      <div class="darkener"></div>
     </main>
   </body>
 </html>
