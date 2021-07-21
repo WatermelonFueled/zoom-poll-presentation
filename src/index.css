@@ -64,14 +64,6 @@ button, a, select {
   transform: translateY(100vh);
 }
 
-#question-big-icon {
-  min-width: 6vh;
-  height: 6vh;
-  border-radius: 22%;
-  overflow: hidden;
-  /* background: center / contain no-repeat url('./img/message-icon.jpg'); */
-}
-
 #question-big {
   border-top: 2px solid var(--gray);
 }

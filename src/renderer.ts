@@ -4,8 +4,6 @@ import { parseString } from '@fast-csv/parse';
 import './index.css';
 // @ts-ignore
 import titleImg from './img/title-img.jpg';
-// @ts-ignore
-import questionIconImg from './img/question-icon.jpg';
 
 
 
@@ -25,7 +23,6 @@ interface Presentation {
 }
 
 document.getElementById('title-img-div').style.background = `15% center / cover no-repeat url('${titleImg}')`
-document.getElementById('question-big-icon').style.background = `center / contain no-repeat url('${questionIconImg}')`
 
 let currentPresentation: Presentation | null = null
 let currentPosition = 0
