@@ -51,6 +51,7 @@ button, a, select {
 #question-big-div {
   z-index: 2;
   position: fixed;
+  top: 9vw;
   left: 9vw;
   width: 82vw;
   min-height: 20vh;
@@ -60,6 +61,7 @@ button, a, select {
   /* background: rgba(0,0,0,200); */
   background: rgba(255,255,255,.8);
   transition: .3s;
+  transform: translateY(100vh);
 }
 
 #question-big-icon {
@@ -70,21 +72,12 @@ button, a, select {
   /* background: center / contain no-repeat url('./img/message-icon.jpg'); */
 }
 
-#question-x {
-  width: 3vh;
-  height: 3vh;
-  /* background: center / contain no-repeat url('./img/whitex.svg'); */
-}
-
 #question-big {
   border-top: 2px solid var(--gray);
 }
 
-.offscreen {
-  top: 100vh;
-}
-.onscreen {
-  top: 9vh;
+#question-big-div.onscreen {
+  transform: translateY(0);
 }
 
 .darkener {

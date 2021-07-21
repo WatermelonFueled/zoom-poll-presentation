@@ -5,9 +5,8 @@ import './index.css';
 // @ts-ignore
 import titleImg from './img/title-img.jpg';
 // @ts-ignore
-import questionIconImg from './img/message-icon.jpg';
-// @ts-ignore
-import questionXImg from './img/blackx.svg';
+import questionIconImg from './img/question-icon.jpg';
+
 
 
 interface Response {
@@ -27,7 +26,6 @@ interface Presentation {
 
 document.getElementById('title-img-div').style.background = `15% center / cover no-repeat url('${titleImg}')`
 document.getElementById('question-big-icon').style.background = `center / contain no-repeat url('${questionIconImg}')`
-document.getElementById('question-x').style.background = `center / contain no-repeat url('${questionXImg}')`
 
 let currentPresentation: Presentation | null = null
 let currentPosition = 0
@@ -253,6 +251,6 @@ const showQuestionBig = () => {
 const hideQuestionBig = () => {
   questionBigVisible = false
   questionSection.className = ''
-  questionBigDiv.className = 'offscreen'
+  questionBigDiv.className = ''
 }
 
